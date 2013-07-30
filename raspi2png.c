@@ -249,7 +249,7 @@ int main(int argc, char *argv[])
 
     bcm_host_init();
 
-    DISPMANX_DISPLAY_HANDLE_T displayHandle = vc_dispmanx_display_open(0);
+    DISPMANX_DISPLAY_HANDLE_T displayHandle = vc_dispmanx_display_open(2000);
 
     DISPMANX_MODEINFO_T modeInfo;
     result = vc_dispmanx_display_get_info(displayHandle, &modeInfo);
